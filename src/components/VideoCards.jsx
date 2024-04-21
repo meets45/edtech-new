@@ -1,6 +1,7 @@
 import React from "react";
 import home from "../assets/home-illustration.svg";
 import logo from "../assets/edtech-logo.svg";
+import { Link } from "react-router-dom";
 
 export const VideoCards = () => {
   return (
@@ -36,9 +37,16 @@ export const VideoCards = () => {
           Here are the biggest enterprise technology acquisitions of 2021 so
           far, in reverse chronological order.
         </p>
-        <button className="mt-3 w-[150px] h-[35px] border-2 border-gray-300 rounded-lg hover:bg-gray-300 hover:border-gray-700">
-          Enroll Now!
-        </button>
+        <div className="flex flex-row">
+          <Link to="/viewCourse">
+            <button className="mt-3 me-3 w-[150px] h-[35px] border-2 border-gray-300 rounded-lg hover:bg-gray-300 hover:border-gray-700">
+              View Course
+            </button>
+          </Link>
+          <button className="mt-3 w-[150px] h-[35px] border-2 border-gray-300 rounded-lg hover:bg-gray-300 hover:border-gray-700">
+            Enroll Now!
+          </button>
+        </div>
       </div>
     </div>
   );

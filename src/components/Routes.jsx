@@ -8,6 +8,7 @@ import { VideoPlayer } from "./VideoPlayer";
 import { VideoUpload } from "./VideoUpload";
 import { Hero } from "../containers/Hero";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ViewCourse } from "./ViewCourse";
 
 const RouteContainer = () => {
   return (
@@ -28,6 +29,7 @@ const RouteContainer = () => {
         <Route exact path="/videoUpload" element={<VideoUpload />} />
         <Route exact path="/main" element={<Hero />} />
         <Route exact path="/createCourse" element={<CourseCreate />} />
+        <Route exact path="/viewCourse" element={<ViewCourse />} />
         <Route path="*" element={<p>There's nothing here: 404!</p>} />
       </Routes>
     </Router>
