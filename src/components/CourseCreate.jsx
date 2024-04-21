@@ -22,7 +22,7 @@ export const CourseCreate = () => {
         <div className="flex flex-col items-center h-[500px] bg-white border border-gray-200 rounded-lg shadow md:flex-row w-[600px] self-center">
           <form className="flex flex-col h-full w-full content-start p-8 leading-normal">
             <input
-              className="bg-white border-2 rounded-lg p-2 border-b-2 text-gray-900 text-sm block w-full h-[45px] placeholder-gray-400 text-white focus:outline-none"
+              className="bg-white border-2 rounded-lg p-2 border-b-2 text-gray-900 text-sm block w-full h-[45px] placeholder-gray-400 text-black focus:outline-none"
               type="text"
               placeholder="Title"
               id="title"
@@ -32,7 +32,7 @@ export const CourseCreate = () => {
               }}
             />
             <textarea
-              className="bg-white mt-4 border-2 rounded-lg p-2 border-b-2 text-gray-900 text-sm block w-full h-[100px] placeholder-gray-400 text-white focus:outline-none resize-none"
+              className="bg-white mt-4 border-2 rounded-lg p-2 border-b-2 text-gray-900 text-sm block w-full h-[100px] placeholder-gray-400 text-black focus:outline-none resize-none"
               type="text"
               placeholder="Tags (Separated by Space)"
               id="tags"
@@ -42,7 +42,7 @@ export const CourseCreate = () => {
               }}
             />
             <textarea
-              className="bg-white mt-4 border-2 rounded-lg p-2 border-b-2 text-gray-900 text-sm block w-full h-[150px] placeholder-gray-400 text-white focus:outline-none resize-none"
+              className="bg-white mt-4 border-2 rounded-lg p-2 border-b-2 text-gray-900 text-sm block w-full h-[150px] placeholder-gray-400 text-black focus:outline-none resize-none"
               type="text"
               placeholder="Description"
               id="description"

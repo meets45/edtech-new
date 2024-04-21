@@ -1,16 +1,16 @@
 import React from "react";
 import { Searchbar } from "./Searchbar";
-import logo from "../assets/edtech-logo.svg";
+import logo from "../assets/new_logo.png";
 import { VideoCardsSm } from "./VideoCardsSm";
-import RadioButton from "./RadioButton";
 import ReactPlayer from "react-player";
+import { QuizDisplay } from "./QuizDisplay";
 export const VideoPlayer = () => {
   return (
     <div className="flex flex-row w-full h-full justify-between">
       <div className="flex w-4/6 flex-col gap-4 overflow-auto">
         <div className="flex flex-row justify-center items-center">
           <a href="/" className="flex items-center space-x-3 mt-4 -ms-16 me-24">
-            <img src={logo} className="h-8" alt="Edtech" />
+            <img src={logo} className="h-12" alt="Edtech" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
               EdTech
             </span>
@@ -59,39 +59,8 @@ export const VideoPlayer = () => {
         >
           Chapter - 1
         </span>
-        <span className="text-lg font-medium ms-14">
-          1. This is the first question?
-        </span>
-        <div className="ms-14">
-          <RadioButton />
-        </div>
-        <span className="text-lg font-medium ms-14">
-          2. This is the first question?
-        </span>
-        <div className="ms-14">
-          <RadioButton />
-        </div>
-        <span className="text-lg font-medium ms-14">
-          3. This is the first question?
-        </span>
-        <div className="ms-14">
-          <RadioButton />
-        </div>
-        <span className="text-lg font-medium ms-14">
-          4. This is the first question?
-        </span>
-        <div className="ms-14">
-          <RadioButton />
-        </div>
-        <span className="text-lg font-medium ms-14">
-          5. This is the first question?
-        </span>
-        <div className="ms-14">
-          <RadioButton />
-        </div>
-        <button className="p-2 text-black bg-white ms-14 hover:bg-gray-200 border-2 rounded-lg w-[130px] h-[45px] -mt-2 mb-3">
-          Submit
-        </button>
+        <span className="ms-14">Each question carries 2 points!</span>
+        <QuizDisplay />
       </div>
       <div className="w-[550px] flex-col border-none border-r-2 border-black">
         <div className="mt-10 font-medium text-lg mb-3">

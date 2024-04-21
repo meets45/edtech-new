@@ -9,6 +9,7 @@ import { VideoUpload } from "./VideoUpload";
 import { Hero } from "../containers/Hero";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ViewCourse } from "./ViewCourse";
+import { QuizDisplay } from "./QuizDisplay";
 
 const RouteContainer = () => {
   return (
@@ -20,6 +21,7 @@ const RouteContainer = () => {
           element={
             <>
               <Navbar /> <Landing />
+              {/* <QuizDisplay /> */}
             </>
           }
         />
@@ -27,7 +29,7 @@ const RouteContainer = () => {
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/videoplayer" element={<VideoPlayer />} />
         <Route exact path="/videoUpload" element={<VideoUpload />} />
-        <Route exact path="/main" element={<Hero isTut={0} />} />
+        <Route exact path="/main" element={<Hero isTut={1} />} />
         <Route exact path="/createCourse" element={<CourseCreate />} />
         <Route exact path="/viewCourse" element={<ViewCourse />} />
         <Route path="*" element={<p>There's nothing here: 404!</p>} />
