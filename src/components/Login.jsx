@@ -1,6 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
@@ -13,11 +14,11 @@ export const Login = () => {
     setPass("");
   };
   const mutation = useMutation(
-    axios.post("http://localhost:5000/auth/login", { email, password: pass },)
+    axios.post("http://localhost:5000/auth/login", { email, password: pass })
   );
-  const handlesubmit=()=>{
-    mutation.mutate()
-  }
+  const handlesubmit = () => {
+    mutation.mutate();
+  };
   return (
     <>
       <div
@@ -83,12 +84,12 @@ export const Login = () => {
                 </button>
                 <div className="text-sm font-medium text-gray-500 dark:text-black">
                   Not registered?
-                  <a
-                    href="/"
+                  <Link
+                    to="/register"
                     className="text-blue-700 ms-1 hover:underline dark:text-blue-500"
                   >
                     Create account
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

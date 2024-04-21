@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import home from "../assets/home-illustration.svg";
+import { Link } from "react-router-dom";
 
 export const Register = () => {
   const [uname, setUname] = useState("");
@@ -172,12 +173,12 @@ export const Register = () => {
                 </button>
                 <div className="text-sm font-medium text-gray-500 dark:text-black">
                   Already registered?
-                  <a
-                    href="/"
+                  <Link
+                    to="/login"
                     className="text-blue-700 ms-1 hover:underline dark:text-blue-500"
                   >
                     Login
-                  </a>
+                  </Link>
                 </div>
               </form>
             </div>

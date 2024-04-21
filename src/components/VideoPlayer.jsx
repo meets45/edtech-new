@@ -1,20 +1,10 @@
-// import React from "react";
-// import { Replay } from "vimond-replay";
-// import CompoundVideoStreamer from "vimond-replay/video-streamer/compound";
-// export const VideoPlayer = ({ src }) => {
-//   return (
-//     <Replay source={src} initialPlaybackProps={{ isPaused: true }}>
-//       <CompoundVideoStreamer />
-//     </Replay>
-//   );
-// };
 import React from "react";
 import { Searchbar } from "./Searchbar";
 import logo from "../assets/edtech-logo.svg";
 import { VideoCardsSm } from "./VideoCardsSm";
 import RadioButton from "./RadioButton";
 import ReactPlayer from "react-player";
-export const VideoPlayer = ({ src }) => {
+export const VideoPlayer = () => {
   return (
     <div className="flex flex-row w-full h-full justify-between">
       <div className="flex w-4/6 flex-col gap-4 overflow-auto">
@@ -31,7 +21,7 @@ export const VideoPlayer = ({ src }) => {
         </div>
         <div className="flex flex-row justify-center items-center self-center w-[875px] h-[470px] h-full bg-black">
           <ReactPlayer
-            url={src}
+            url="https://dyznew8dbds5w.cloudfront.net/song/output.mpd"
             width="835px"
             height="465px"
             config={{ file: { forceDASH: true } }}
