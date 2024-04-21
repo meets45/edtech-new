@@ -33,7 +33,7 @@ export const VideoCards = () => {
             CodeWithRaees
           </span>
         </div>
-        <p class="mt-3 text-sm text-gray-700">
+        <p className="mt-3 text-sm text-gray-700">
           Here are the biggest enterprise technology acquisitions of 2021 so
           far, in reverse chronological order.
         </p>

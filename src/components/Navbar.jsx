@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/edtech-logo.svg";
+import logo from "../assets/new_logo.png";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
@@ -11,7 +11,7 @@ export const Navbar = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src={logo} className="h-8" alt="Edtech" />
+            <img src={logo} className="h-10" alt="Edtech" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
               EdTech
             </span>

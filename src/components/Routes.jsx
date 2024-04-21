@@ -27,7 +27,7 @@ const RouteContainer = () => {
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/videoplayer" element={<VideoPlayer />} />
         <Route exact path="/videoUpload" element={<VideoUpload />} />
-        <Route exact path="/main" element={<Hero />} />
+        <Route exact path="/main" element={<Hero isTut={0} />} />
         <Route exact path="/createCourse" element={<CourseCreate />} />
         <Route exact path="/viewCourse" element={<ViewCourse />} />
         <Route path="*" element={<p>There's nothing here: 404!</p>} />
